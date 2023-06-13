@@ -1,0 +1,102 @@
+{
+  "id": "ea2dccaa-12b9-4633-b335-a0bef4685ec1",
+  "version": "2.0",
+  "name": "SeleniumIdeTest",
+  "url": "https://it.wikipedia.org",
+  "tests": [{
+    "id": "659cb0cf-0a22-4285-abef-135ba266d349",
+    "name": "GreatReefBarrier",
+    "commands": [{
+      "id": "0ed5c3a0-3ebd-48e9-8ec7-af1947f98705",
+      "comment": "",
+      "command": "open",
+      "target": "/wiki/Grande_barriera_corallina",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9fc54bef-485d-4b1b-97fd-4015e2e96718",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "788x816",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6e974c6f-68a3-4022-a7a6-83bc14a00a12",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tocsection-4 .toctext",
+      "targets": [
+        ["css=.tocsection-4 .toctext", "css:finder"],
+        ["xpath=//div[@id='toc']/ul/li[3]/ul/li/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[3]/ul/li/a/span[2]", "xpath:position"],
+        ["xpath=//span[contains(.,'Squali')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "87afe89a-e8ff-4164-9fee-b3f0606e9161",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Squalo balena",
+      "targets": [
+        ["linkText=Squalo balena", "linkText"],
+        ["css=ul:nth-child(18) > li:nth-child(9) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Squalo balena')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/ul/li[9]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Rhincodon_typus')]", "xpath:href"],
+        ["xpath=//li[9]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Squalo balena')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "38b37a60-9a6c-4ff9-86bd-c65e3c76d05a",
+      "comment": "",
+      "command": "verifyText",
+      "target": "//*[@id=\"mw-content-text\"]/div[1]/p[4]/a[2]",
+      "targets": [],
+      "value": "squalo elefante"
+    }, {
+      "id": "befb1d32-53d2-4840-a9ed-325f8ac1ff85",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=squalo elefante",
+      "targets": [
+        ["linkText=squalo elefante", "linkText"],
+        ["css=p:nth-child(5) > a:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'squalo elefante')]", "xpath:link"],
+        ["xpath=//div[@id='mw-content-text']/div/p[4]/a[2]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/wiki/Cetorhinus_maximus')]", "xpath:href"],
+        ["xpath=//p[4]/a[2]", "xpath:position"],
+        ["xpath=//a[contains(.,'squalo elefante')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e5a35ee-3949-4ac6-9993-ff28ab8ddd1b",
+      "comment": "",
+      "command": "click",
+      "target": "css=.tocsection-19 > a > .toctext",
+      "targets": [
+        ["css=.tocsection-19 > a > .toctext", "css:finder"],
+        ["xpath=//div[@id='toc']/ul/li[6]/a/span[2]", "xpath:idRelative"],
+        ["xpath=//li[6]/a/span[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d13f5736-f643-4813-aadd-b9b1caabb4d9",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,14780)",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "274003fe-0ea0-43a4-aec6-c11cde81f6f0",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["659cb0cf-0a22-4285-abef-135ba266d349"]
+  }],
+  "urls": ["https://it.wikipedia.org/"],
+  "plugins": []
+}
